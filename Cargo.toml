@@ -1,0 +1,16 @@
+[package]
+name = "jwt_provider"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+axum = "0.8.8"
+axum-extra = { version = "0.12.5", features = ["typed-header"]}
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.149"
+tokio = { version = "1.49.0", features = ["full"] }
+jsonwebtoken = { version = "10.3.0", features = ["rust_crypto"] }
+tracing-subscriber = { version = "0.3.22", features = ["env-filter"] }
+tracing = "0.1.44"
+chrono = "0.4.43"
+dotenv = "0.15.0"
