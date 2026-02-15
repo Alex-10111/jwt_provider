@@ -16,8 +16,8 @@ This project implements a simple web server in Rust using the [Axum](https://git
 
 ### 1. Clone the repository and navigate to the project folder
 ```
-git clone <URL>
-cd web_api
+git clone https://github.com/Alex-10111/jwt_provider.git
+cd jwt_provider
 ```
 
 ### 2. Install dependencies
@@ -26,18 +26,13 @@ cargo build
 ```
 
 ### 3. Create a .env file from the .env.example template and fill it in
-Example content:
-```
-JWT_SECRET=your_secret_key
-JWT_LIFETIME_MINUTES=60
-```
 
 ### 4. Run the server
 ```
 cargo run
 ```
 
-The server will be available at http://127.0.0.1:3000
+The server will be available at http://127.0.0.1:8001 (by default, can be changed in .env).
 
 ## Example Requests
 
